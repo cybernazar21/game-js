@@ -1,0 +1,139 @@
+body {
+    overflow-x: hidden;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 20000%;
+    }
+}
+/* VITALY - the best name ever ! */
+#desert {
+    position: absolute;
+    background-image: url("./images/background-game4.jpg");
+    height: 100%;
+    width: 100%;
+    /* background-size: cover; */
+    animation: slideright 600s infinite linear;
+    bottom: 0;
+    left: 0;
+}
+
+.bats {
+    background-image: url('./images/bat2.gif');
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.kitty {
+    background-image: url('./images/kitty.gif');
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    top: 120px;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    border: 2px solid goldenrod;
+    position: absolute;
+    top: 10;
+    right: 5%;
+    border-radius: 30%;
+    color: gold;
+    background: linear-gradient(to bottom, #7a7307, #ddc317); /* Градієнтний фон */
+    box-shadow: 0 4px 8px rgb(80, 92, 4);
+    z-index: 1;
+    padding: 10px; /* Внутрішні відступи для тексту */
+    overflow: hidden;
+}
+
+.score h1, .score h2 {
+    margin: 10px 10px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.explosion {
+    background-image: url("./images/explosion.gif");
+    height: 220px;
+    width: 180px;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.car {
+    background-image: url("./images/car.png");
+    height: 170px;
+    width: 190px;
+    bottom: 0;
+    position: absolute;
+}
+
+.car2 {
+    background-image: url("./images/car2.png");
+    height: 140px;
+    width: 250px;
+    bottom: 0;
+    position: absolute;
+    transform: scaleX(-1);
+    display: none;
+}
+
+.car3 {
+    background-image: url("./images/car3.png");
+    height: 140px;
+    width: 290px;
+    bottom: 0;
+    position: absolute;
+    transform: scaleX(-1);
+    display: none;
+}
+
+.obstacle {
+    background-image: url("./images/cacti2.png");
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+#alert {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: black;
+}
+
+#info {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+}
