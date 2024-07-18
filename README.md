@@ -1,1 +1,1 @@
-# game-js
+# My first JS game
