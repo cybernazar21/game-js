@@ -210,6 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 scoreDisplay.innerHTML = score;
                 checkScoreAndChangeCar();
                 renderingBats();
+                renderingKitty();
             }
         }, 100);
     }
@@ -222,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function renderingBats() {
+    function renderingKitty() {
         if(score >= 550 && score <= 811) {
             kitty.style.display = 'block';
         } else {
